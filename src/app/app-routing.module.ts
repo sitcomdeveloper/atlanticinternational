@@ -33,7 +33,7 @@ const routes: Routes = [
     {path:'', redirectTo:'default', pathMatch:'full'},
     {path:'default', component:DefaultComponent}
   ]}
-  
+
 ];
 
 @NgModule({

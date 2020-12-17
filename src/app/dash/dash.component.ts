@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dash',
@@ -8,9 +9,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class DashComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  logout() {
+    this.router.navigateByUrl('login')
+  }
 }
