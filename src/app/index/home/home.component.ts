@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/api.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  fetchImagesofHeaders: any;
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
+    this.HeaderSliders();
   }
-
+HeaderSliders() {
+  const headersImages = {}
+  this.apiService.getheaderSlider(headersImages).subscribe(imagesHeadersRes => {
+    this.fetchImagesofHeaders = imagesHeadersRes;
+    console.log('fetchImagesofHeaders', imagesHeadersRes);
+  })
+}
 }
