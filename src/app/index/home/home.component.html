@@ -14,11 +14,11 @@
             <h5>Oil</h5>
         </div>
         <div class="col-md-10 w3_agileits_banner_bottom_grid_left">
-            <ul id="flexiselDemo1">	
+            <ul id="flexiselDemo1" *ngFor = "let images of allheaderImages">	
                 <li>
                     <div class="agileits_w3layouts_banner_bottom_grid">
                         <div class="wthree_banner_bottom_grid1">
-                            <img src="./assets/g1.jpg" alt=" " class="img-responsive" />
+                            <img [src]="images" alt=" " class="img-responsive" />
                             <div class="agileinfo_banner_bottom_grid1_pos">
                                 <h3>The Oil</h3>
                                     <p>Real Quality</p>
@@ -27,7 +27,7 @@
                         <h4><a routerLink="#" data-toggle="modal" data-target="#myModal">Vivamus et dolor pulvinar, iaculis diam.</a></h4>
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <div class="agileits_w3layouts_banner_bottom_grid">
                         <div class="wthree_banner_bottom_grid1">
                             <img src="./assets/g2.jpg" alt=" " class="img-responsive" />
@@ -74,7 +74,7 @@
                         </div>
                         <h4><a routerLink="#" data-toggle="modal" data-target="#myModal">Maecenas dictum honcus scelerisque.</a></h4>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="clearfix"> </div>

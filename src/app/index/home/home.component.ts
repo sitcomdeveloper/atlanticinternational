@@ -8,6 +8,7 @@ import { ApiService } from 'src/api.service';
 })
 export class HomeComponent implements OnInit {
   fetchImagesofHeaders: any;
+  images: any;
 
   constructor(private apiService: ApiService) { }
 
@@ -18,7 +19,8 @@ HeaderSliders() {
   const headersImages = {}
   this.apiService.getheaderSlider(headersImages).subscribe(imagesHeadersRes => {
     this.fetchImagesofHeaders = imagesHeadersRes;
-    console.log('fetchImagesofHeaders', imagesHeadersRes);
+    this.images = this.fetchImagesofHeaders.imageData;
+    console.log('fetchImagesofHeaders', this.images);
   })
 }
 }

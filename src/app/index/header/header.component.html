@@ -80,18 +80,19 @@
           </ol>
       
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+          <div class="carousel-inner" *ngFor = "let Immages of images">
             <div class="item active">
-                <img src="assets/images/b3.jpg" alt="" style="width: 100%; height: 600px;">
+                <!-- <img [src]="Immages" alt="" style="width: 100%; height: 600px;"> -->
+                <img src="https://saavyatlantic.herokuapp.com/{{Immages}}" alt="" style="width: 100%; height: 600px;">
             </div>
       
-            <div class="item">
+            <!-- <div class="item">
                 <img src="assets/images/b6.jpg" alt="" style="width: 100%; height: 600px;">
             </div>
           
             <div class="item">
                 <img src="assets/images/b1.jpg" alt="" style="width: 100%; height: 600px;">
-            </div>
+            </div> -->
           </div>
       
           <!-- Left and right controls -->
