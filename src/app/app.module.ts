@@ -51,8 +51,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule, CarouselModule.forRoot()
-    // LoadingBarRouterModule,
+    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule, 
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

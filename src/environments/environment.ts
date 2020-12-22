@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://saavyatlantic.herokuapp.com/'
+  API_URL: 'https://saavyatlantic.herokuapp.com'
 };
 
 /*

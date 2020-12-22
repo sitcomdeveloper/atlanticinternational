@@ -115,14 +115,31 @@
         </slide>
       </carousel> -->
 
-      <carousel>
-        <slide *ngFor="let Immages of images;">
-          <img [src]="https://saavyatlantic.herokuapp.com{{Immages.image_name}}" alt="first slide" style="display: block; width: 100%;">
-        </slide>
+<div *ngFor="let Immages of images;">
+      <pre>{{url}}{{Immages.image_name}}</pre>
+    </div>
+
+      <!-- <carousel> -->
+        <!-- <slide *ngFor="let Immages of images;"> -->
+          <!-- <img [src]="https://saavyatlantic.herokuapp.com{{Immages.image_name}}" alt="first slide" style="display: block; width: 100%;"> -->
+          <!-- <pre>{{API_URL}}{{Immages.image_name}}</pre> -->
+          <!-- <img src = "[{{API_URL}}{{Immages.image_name}}]" alt="first slide" style="display: block; width: 100%;"> -->
+        <!-- </slide> -->
         <!-- <slide>
           <img src="assets/images/nature/2.jpg" alt="second slide" style="display: block; width: 100%;">
         </slide>
         <slide>
           <img src="assets/images/nature/3.jpg" alt="third slide" style="display: block; width: 100%;">
         </slide> -->
+      <!-- </carousel> -->
+
+      <carousel [(activeSlide)]="activeSlideIndex" >
+        <slide *ngFor="let Immages of images; let index=index">
+          <img [src]="{{url}}{{Immages.image_name}}" alt="image slide" style="display: block; width: 100%;">
+       
+          <div class="carousel-caption">
+            <h4>Slide {{index}}</h4>
+            <p>{{slide.text}}</p>
+          </div>
+        </slide>
       </carousel>

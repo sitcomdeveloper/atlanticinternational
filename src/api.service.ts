@@ -11,6 +11,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
   getheaderSlider(headersImages: any): Observable<any> {
-    return this.http.post<any>(API_URL + 'users/getheaderslider', headersImages);
+    return this.http.post<any>(API_URL + '/users/getheaderslider', headersImages);
   }
 }
