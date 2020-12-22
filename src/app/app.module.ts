@@ -4,6 +4,8 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './index/home/home.component';
@@ -49,7 +51,7 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule
+    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule, CarouselModule.forRoot()
     // LoadingBarRouterModule,
   ],
   providers: [],

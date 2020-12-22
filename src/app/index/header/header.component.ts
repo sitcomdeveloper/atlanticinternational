@@ -9,7 +9,8 @@ import { ApiService } from 'src/api.service';
 export class HeaderComponent implements OnInit {
   fetchImagesofHeaders: any;
   images: any;
-
+  // slides: { image: string }[] = [];
+  // activeSlideIndex = 0;
   constructor(private apiService: ApiService ) { }
 
   ngOnInit() {
@@ -23,5 +24,4 @@ export class HeaderComponent implements OnInit {
       console.log('fetchImagesofHeaders', this.images);
     })
   }
-  
 }
