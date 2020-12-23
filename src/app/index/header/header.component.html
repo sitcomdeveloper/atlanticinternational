@@ -133,13 +133,25 @@
         </slide> -->
       <!-- </carousel> -->
 
-      <carousel [(activeSlide)]="activeSlideIndex" >
+      <!-- <carousel [(activeSlide)]="activeSlideIndex" >
         <slide *ngFor="let Immages of images; let index=index">
           <img [src]="{{url}}{{Immages.image_name}}" alt="image slide" style="display: block; width: 100%;">
-       
+
           <div class="carousel-caption">
             <h4>Slide {{index}}</h4>
             <p>{{slide.text}}</p>
           </div>
+        </slide>
+      </carousel> -->
+
+      <carousel>
+        <slide>
+          <img src="assets/images/b6.jpg" alt="first slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+          <img src="assets/images/b1.jpg" alt="second slide" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+          <img src="assets/images/b6.jpg" alt="third slide" style="display: block; width: 100%;">
         </slide>
       </carousel>
