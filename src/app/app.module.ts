@@ -51,8 +51,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule,
-    CarouselModule.forRoot(),
+    LoadingBarRouterModule, FormsModule, ReactiveFormsModule, HttpClientModule,CarouselModule.forRoot(),
+
   ],
   entryComponents: [HeaderComponent],
   providers: [],
